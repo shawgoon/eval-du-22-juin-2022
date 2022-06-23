@@ -1,0 +1,293 @@
+                /* Généralité */
+                
+                @font-face {
+                    font-family: "liberation";
+                    src: url(../fonts/LiberationSans-Regular-webfont.ttf);
+                }
+                
+                @font-face {
+                    font-family: "liberationBold";
+                    src: url(../fonts/LiberationSans-Bold-webfont.ttf);
+                }
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    font-family: "liberation";
+                    box-sizing: border-box;
+                }
+                /* Header */
+                
+                #headerBackground {
+                    position: relative;
+                    height: 31vh;
+                    background-image: url(../images/background.jpg);
+                }
+                
+                #headerWrapper {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+                
+                .logo {
+                    margin: 1em;
+                }
+                
+                .logo p {
+                    margin: 0.5em;
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+                
+                span,
+                .badge {
+                    color: #E89D00;
+                }
+                
+                .headerImg {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+                
+                .headerImg img {
+                    width: 100%;
+                }
+                
+                .user {
+                    padding: 1em 2em;
+                }
+                
+                header ul,
+                #info ul {
+                    padding: 1em;
+                    width: 100%;
+                    display: flex;
+                    list-style-type: none;
+                    justify-content: space-between;
+                }
+                /* header nav */
+                
+                header nav {
+                    display: flex;
+                    width: 100%;
+                }
+                
+                header nav a,
+                #info a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 1em;
+                }
+                /* section cards */
+                
+                #cards {
+                    background-color: #1C1C1C;
+                }
+                
+                .catalogueWrapper {
+                    width: 90%;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                }
+                
+                .catalogueWrapper img {
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .catalogueImg {
+                    height: 30vh;
+                }
+                
+                .cardContainer {
+                    background-color: #F3F3F3;
+                    margin: 0 auto;
+                    padding: 3em 0 5em;
+                }
+                
+                .card figure {
+                    width: 70%;
+                    margin: 0 auto 4em auto;
+                    position: relative;
+                }
+                
+                .card img {
+                    width: 100%;
+                }
+                
+                .card figcaption p {
+                    margin: 4em auto;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 15px
+                }
+                
+                .buy {
+                    display: flex;
+                    margin: 1em;
+                    width: 100%;
+                }
+                
+                .card button {
+                    font-size: 1em;
+                    padding: 0.3em 2em;
+                    background-color: #1C1C1C;
+                    color: white;
+                    border: none;
+                }
+                
+                .exPrice {
+                    color: #1C1C1C;
+                    text-decoration-line: line-through;
+                    width: fit-content;
+                    margin: auto;
+                    font-family: "liberationBold";
+                    font-size: 1.5em;
+                }
+                
+                .card span {
+                    width: fit-content;
+                    margin: auto;
+                    font-family: "liberationBold";
+                    font-size: 1.5em;
+                }
+                
+                .badge {
+                    background-color: #1C1C1C;
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 0.3em 0.5em;
+                    font-family: "liberationBold";
+                    border-radius: 0.3em;
+                    font-size: 1.5em;
+                    top: -3.5em;
+                    right: -11.5em;
+                }
+                
+                .badge2 {
+                    right: -13em;
+                }
+                /* section  info */
+                
+                #info {
+                    width: 80%;
+                    margin: 0 auto;
+                    border-radius: 1em;
+                    bottom: -2em;
+                    background-color: white;
+                    position: relative;
+                    top: -25px;
+                }
+                
+                #info a {
+                    color: #5C5C5C;
+                    font-size: 0.8em;
+                }
+                
+                .pointGris {
+                    width: 0.8em;
+                    height: 0.8em;
+                    background-color: #D2D2D2;
+                    border-radius: 50%;
+                }
+                
+                footer {
+                    background-color: #373737;
+                }
+                
+                footer p {
+                    color: white;
+                    text-align: center;
+                }
+                
+                footer p:last-child {
+                    padding-bottom: 2em;
+                }
+                
+                footer .contactWrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                
+                .contact {
+                    width: 50%;
+                    align-items: center;
+                    padding: 2em;
+                }
+                
+                .contact img {
+                    margin: 0 auto;
+                }
+                
+                hr {
+                    width: 90%;
+                    height: 3px;
+                    margin: 0 auto;
+                    background-color: #818181;
+                }
+                
+                .social {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .social img {
+                    padding: 2em;
+                }
+                /* Responsive */
+                
+                @media screen and (min-width: 576px) {
+                    /* header */
+                    #headerBackground {
+                        height: 20vh;
+                    }
+                    #headerWapper {
+                        width: 70%;
+                    }
+                    .logo {
+                        float: left;
+                        margin-left: 14%;
+                    }
+                    .user {
+                        float: right;
+                        margin-right: 15%;
+                        padding-right: 0;
+                        font-size: 1.5em;
+                    }
+                    header ul {
+                        width: fit-content;
+                        margin-left: 65%;
+                        padding-right: 0;
+                    }
+                    /* section card */
+                    .catalogueWrapper {
+                        width: 70%;
+                    }
+                    .card {
+                        width: 48%;
+                        display: inline-block;
+                        justify-content: space-around;
+                    }
+                    .card figcaption p {
+                        bottom: 10px;
+                        left: 75px
+                    }
+                    /* section info */
+                    #info {
+                        width: 40%;
+                    }
+                    /* footer */
+                    .contactWrapper {
+                        width: 70%;
+                        justify-content: space-between;
+                    }
+                    .contact {
+                        width: 22%;
+                    }
+                    hr {
+                        width: 70%;
+                    }
+                }
